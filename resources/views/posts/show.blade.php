@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app')  <!-- レイアウトを指定 -->
 
 @section('content')
 <h1>{{ $post->title }}</h1>
