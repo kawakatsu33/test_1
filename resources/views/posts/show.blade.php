@@ -3,5 +3,10 @@
 @section('content')
 <h1>{{ $post->title }}</h1>
 <p>{{ $post->body }}</p>
-<a href="{{ route('posts.index') }}">ブログ投稿一覧画面に戻る</a>
+
+<a href="/posts/{{ $post->id }}/edit">edit</a>
+<div>
+    <a href="{{ route('posts.index') }}">戻る</a>
+</div>
+
 @endsection
